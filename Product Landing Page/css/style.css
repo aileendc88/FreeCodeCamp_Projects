@@ -1,0 +1,158 @@
+/** global element styles **/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, Trebuchet, "Open Sans", Arial;
+}
+
+ul {
+  display: inline-flex;
+}
+
+li {
+  display: inline-flex;
+  list-style: none;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #66686D;
+}
+
+h3 {
+  font-size: 15px;
+}
+
+/** global classes styles **/
+
+.main-container {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.content-container {
+  margin: 0 auto;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.content-heading {
+  padding: 100px 0 50px 0;
+}
+
+.gray-section {
+  background-color: #e9e9e9;
+}
+
+.btn {
+  height: 30px;
+  width: 100px;
+  color: white;
+  background-color: #ECAA39;
+  border: 1px solid #ECAA39;
+  border-radius: 4px;
+}
+
+/** header-nav-bar **/
+
+header {
+  position: fixed;
+  top: 0;
+  min-height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  justify-content: space-between;
+  width: 100%;
+  box-shadow: 0px 1px 1px #888888;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
+
+ul {
+  display: block;
+  margin: 0 50px;
+}
+
+.logo-container {
+  display: block;
+  margin: 0 100px;
+}
+
+/** hero image **/
+.hero-container {
+  background-image: url("https://images.unsplash.com/photo-1521743952250-070b40e5023f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f6286e3f191a66de5050e6eafcace189&auto=format&fit=crop&w=800&q=60");
+  height: 550px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/** features **/
+
+
+.tile-container {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+  margin-bottom: 100px;
+}
+
+.icons {
+  height: 150px;
+  width: 150px;
+}
+
+.feature-desc {
+  font-size: 12px;
+}
+
+/** about **/
+#about-paragraph {
+  text-align: left;
+  width: 60%;
+  margin: 0 auto;
+  line-height: 1.5em;
+  padding-bottom: 75px;
+}
+
+/** explore **/
+iframe {
+  padding-bottom: 100px;
+}
+
+
+/** form **/
+form {
+  display: inline-flex;
+  flex-direction: column; 
+  padding-bottom: 200px;
+}
+
+label{
+
+}
+
+#email, #name {
+  height: 28px;
+  width: 350px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: 1px solid #c0c0c0;
+  font-size: 12px; 
+}
+
+#submit {
+  width: 350px;
+}
+
