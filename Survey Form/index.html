@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Fork Me! FCC: Test Suite Template</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<body>
+  <div class="container">
+    <h1 id="title">Website Feedback Survey Form</h1>
+    <p id="description">Let us know how we can improve our website</p>
+    <div class="survey-container">
+      <form id="survey-form">
+        
+        <div class="survey-items">
+          <div class="questions">
+            <label id="name-label" for="name" >Name*</label>
+          </div>
+          <div class="answers">
+            <input autofocus id="name" class="input-field" type="text" name="name" placeholder="Enter your name" size="50"required>
+          </div>
+        </div>
+        
+        <div class="survey-items">
+          <div class="questions">
+            <label id="email-label" for="email">Email*</label>
+          </div>
+          <div class="answers">
+            <input id="email" class="input-field" type="email" name="email" placeholder="Enter your email" size="50" required>
+          </div>
+        </div>
+        
+        <div class="survey-items">
+          <div class="questions">
+            <label id="phone-label" for="tel" >Phone</label>
+          </div>
+          <div class="answers">
+            <input id="tel" class="input-field" type="tel" name="tel" placeholder="(800)123-7654" size="25">
+          </div>
+        </div>
+        
+        <div class="survey-items">
+          <div class="questions">
+            <label id="number-label" for="age">Age</label>
+          </div>
+            <input id="number" class="input-field" type="number" name="age" placeholder="Age" min="1" max="99" size="25">
+          <div class="answers">
+          </div>
+        </div>
+        
+        <div id="question5">
+          <div class="questions">
+            <label id="employment-label" for="employment">Which option best describes your current role?</label>
+          </div>
+          
+          <div class="answers">
+            <select id="dropdown" name="employment">
+              <option value="employed-full">Employed full time</option>
+              <option value="employed-part">Employed part time</option>
+              <option value="self-employed">Self-employed</option>
+              <option value="freelance">Freelancer</option>
+              <option value="homemaker">Homemaker</option>
+              <option value="student">Student</option>
+              <option value="military">Military</option>
+              <option value="retired">Retired</option>
+              <option value="out-work">Out of work</option>
+            </select>
+          </div>
+          
+          <div id="question6">
+            <div class="questions">
+              <label for="reasons-visit">What are your reason/s for visiting our website? Please select all that apply.</label>
+            </div>
+            <div class="answers">
+              <ul id="reasons-visit" style="list-style:none">
+                <li>
+                  <label><input class="checkbox" type="checkbox" name="reasons" value="1">Specials</label>
+                </li>
+                <li>
+                  <label><input class="checkbox" type="checkbox" name="reasons" value="2">Product Info</label>
+                </li>
+                <li>
+                  <label><input class="checkbox" type="checkbox" name="reasons" value="3">Purchase</label>
+                </li>
+                <li>
+                  <label><input class="checkbox" type="checkbox" name="reasons" value="4">Contact Info</label>
+                </li>
+                <li>
+                  <label><input class="checkbox" type="checkbox" name="reasons" value="5">Just Curious</label>
+                </li>
+              <ul>
+            </div>
+          </div>
+          
+          <div id="question7">
+            <div class="questions">
+              <label id="overall-label" for="overall">Overall, how does our website meet your needs?</label>
+            </div>
+            <div class="answers">
+              <ul id="rating" style="list-style:none">
+                <li>
+                  <label>
+                    <input class="radio-button" name="overall" type="radio" value="5">Extremely well
+                  </label> 
+                </li>
+                <li>
+                  <label>
+                    <input class="radio-button" name="overall" type="radio" value="4">Very well
+                  </label> 
+                </li>
+                <li>
+                  <label>
+                    <input class="radio-button" name="overall" type="radio" value="3">Somewhat well
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input class="radio-button" name="overall" type="radio" value="2">Not so well
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input class="radio-button" name="overall" type="radio" value="1">Not well at all
+                  </label>
+                </li>
+              </ul>
+            </div> 
+          </div>
+          <div id="question8">
+            <div class="questions">
+              <label id="suggestions-label" for="suggestions" name"suggestions">What suggestions do you have for improving our web site?</label>
+            </div>
+            <div class="answers">
+              <textarea class="input-field" id="comments" style="height:100px;resize:vertical" placeholder="Tell us how we can make your experience better."></textarea>
+            </div>
+          </div>
+          <div>
+            <button id="submit" type="submit">Submit</button>
+          </div>     
+      </form>
+    </div>
+  </div>
+</body>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
