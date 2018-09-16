@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Technical Documentation Page</title>
+      <link rel="stylesheet" href="css/style.css"> 
+</head>
+
+<body>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <div class="container">
+        <!---SIDE NAVIGATION-->
+        <div class="side-nav">
+            <nav id="navbar">
+                <header class="nav-heading">CSS Documentation</header>
+                <div class="nav-menu">
+                    <a class="nav-link" href="#Introduction">Introduction</a>
+                    <a class="nav-link" href="#Syntax_and_Selectors">Syntax and Selectors</a>
+                    <a class="nav-link" href="#Colors">Colors</a>
+                    <a class="nav-link" href="#Backgrounds">Backgrounds</a>
+                    <a class="nav-link" href="#Text">Text</a>            
+                </div>
+            </nav>
+        </div>
+
+        <main id="main-doc">
+
+        <!--SECTION 1 - INTRODUCTION-->
+            <section class="main-section" id="Introduction">
+                <header class="section-title">Introduction</header>
+                <article class="section-content">
+                    <h3 class="sub-section-title">What is CSS?</h3>
+                    <ul>
+                        <li><b>CSS</b> stands for <b>C</b>ascading <b>S</b>tyle <b>S</b>heets</li>
+                        <li>CSS describes <b>how HTML elements are to be displayed on screen, paper or in other media</b></li>
+                        <li>CSS <b>saves a lot of work.</b>It can control the layout of multiple web pages all at once.</li>
+                        <li>External stylesheets are stored in <b>CSS files</b></li>
+                    </ul>
+                    <h3 class="sub-section-title">Why use CSS?</h3>
+                    <p>
+                    CSS is used to define styles for your web pages, including the design, 
+                    layout and variations in display for different devices and screen sizes. 
+                    </p>
+                    <h3 class="sub-section-title">CSS Solved a Big Problem</h3>
+                    <p>HTML was NEVER intended to contain tags for formatting a web page!</p>
+                    <p>HTML was created to describe the content of a web page, like:</p>
+                    <div class="example">
+                        <code>
+                            < h1 >This is a heading< /h1 >
+                        </code>
+                        <br>
+                        <code> < p >This is a paragraph< /p ></code>   
+                    </div>
+                    <p>When tags like <font>, and color attributes were added to the HTML 3.2 specification, it started a nightmare 
+                    for web developers. Development of large websites, where fonts and color information were added to every single 
+                    page, became a long and expensive process
+                    </p>
+                    <p>To solve this problem, the World Wide Web Consortium (W3C) created CSS.</p>
+                    <p>CSS removed the style formatting from the HTML page!</p>
+                    <h3 class="sub-section-title">CSS Saves a Lot of Work!</h3>
+                    <p>The style definitions are normally saved in external .css files.</p>
+                    <p>With an external stylesheet file, you can change the look of an entire website by changing just one file!</p>
+                </article>
+            </section>
+            <hr>
+        <!--SECTION 2 - SYNTAX-->
+            <section class="main-section" id="Syntax_and_Selectors">
+                <header class="section-title">Syntax and Selectors</header>
+                <article class="section-content">
+                    <h3 class="sub-section-title">CSS Syntax</h3>
+                    <p>A CSS rule-set consists of a selector and a declaration block:</p>
+                    <img src="https://www.w3schools.com/css/selector.gif" alt="">
+                    <p>The selector points to the HTML element you want to style.</p>
+                    <p>The declaration block contains one or more declarations separated by semicolons.</p>
+                    <p>Each declaration includes a CSS property name and a value, separated by a colon.</p>
+                    <p>A CSS declaration always ends with a semicolon, and declaration blocks are surrounded by curly braces.</p>
+                    <p>In the following example all <p> elements will be center-aligned, with a red text color:</p>        
+                    <div class="example">
+                        <code>
+                            p {
+                                color: red;
+                                text-align: center;
+                            }
+                        </code>
+                    </div>
+                    <h3 class="sub-section-title">CSS Selectors</h3>
+                    <p>CSS selectors are used to "find" (or select) HTML elements based on their element name, id, class, attribute, and more.</p>
+                    <h3 class="sub-section-title">The Element Selector</h3>
+                    <p>The element selector selects elements based on the element name.</p>
+                    <p>You can select all <p> elements on a page like this (in this case, all <p> elements will be center-aligned, with a red text color):</p>
+                    <div class="example">
+                        <code>
+                            p { 
+                                text-align: center;
+                                color: red;
+                            }
+                        </code>
+                    </div>
+                    <h3 class="sub-section-title">The id Selector</h3>
+                    <p>The id selector uses the id attribute of an HTML element to select a specific element.</p>
+                    <p>The id of an element should be unique within a page, so the id selector is used to select one unique element!</p>
+                    <p>To select an element with a specific id, write a hash (#) character, followed by the id of the element.</p>
+                    <p>The style rule below will be applied to the HTML element with id="para1":</p>
+                    <div class="example">
+                        <h4>Example</h4>
+                        <code>
+                            #para1 {
+                                text-align: center;
+                                color: red;
+                            }
+                        </code>
+                    </div>
+                    <h3 class="sub-section-title">The class Selector</h3>
+                    <p>The class selector selects elements with a specific class attribute.</p>
+                    <p>To select elements with a specific class, write a period (.) character, followed by the name of the class.</p>
+                    <p>In the example below, all HTML elements with class="center" will be red and center-aligned:</p>
+                    <div class="example">
+                        <h4>Example</h4>
+                        <code>
+                            .center {
+                                text-align : center;
+                                color: red;
+                            }
+                        </code>
+                    </div>
+                </article>
+            </section>
+            <hr>
+        <!--SECTION 3 - COLORS-->
+            <section class="main-section" id="Colors">
+                <header class="section-title">Colors</header>
+                <article class="section-content">
+                    <h3 class="sub-section-title">Color Names</h3>
+                    <p>In HTML, a color can be specified by using a color name:</p>
+                    <div class= "color-boxes">
+                        <div style="background-color:tomato">Tomato</div>
+                        <div style="background-color:orange">Orange</div>
+                        <div style="background-color:dodgerblue">DodgerBlue</div>
+                        <div style="background-color:mediumseagreen">MediumSeaGreen</div>
+                        <div style="background-color:gray">Gray</div>
+                        <div style="background-color:slateblue">SlateBlue</div>
+                        <div style="background-color:violet">Violet</div>
+                        <div style="background-color:lightgray">Lightgray</div>
+                    </div>
+                    <h3 class="sub-section-title">Background Color</h3>
+                    <p>You can set the background color for HTML elements:</p>
+                    <h1 style="background-color:dodgerblue">Hello World</h1>
+                    <p style="background-color:tomato">Pet parrots can be incredible if demanding friends, but for people more accustomed to fluffy 
+                        mammalian companions, they can present some unexpected challenges. The long-lived, intelligent and highly social birds need especially 
+                        high amounts of attention and enrichment, or else they can pick up bad habits and find themselves bored and stressed to the point where they pluck out their own feathers.
+                    </p>
+                    
+                    <div class="example">
+                        <h4>Example</h4>
+                        <p>
+                            <span> < h1 style = </span> 
+                            <span style="color:red"> "background-color: tomato" ></span>
+                            <span> Hello World </span>
+                            <span> < /h1 ></span>     
+                        </p>
+                        <p>
+                            <span> < p style = </span> 
+                            <span style="color:red"> "background-color: tomato" ></span>
+                            <span> Pet parrots can be incredible ... </span>
+                            <span> < /p ></span>     
+                        </p>
+                    </div>
+                    <h3 class="sub-section-title">RGB Value</h3>
+                    <p>In HTML, a color can be specified as an RGB value, using this formula:</p>
+                    <h4>rgb (red, green, blue)</h4>
+                    <p>Each parameter (red, green, and blue) defines the intensity of the color between 0 and 255.</p>
+                    <p>For example, rgb(255, 0, 0) is displayed as red, because red is set to its highest value (255) and the others are set to 0.</p>
+                    <div class="example">
+                        <div class="rgb-box">
+                            <div style="background-color: rgb(255, 0, 0)">rgb(255, 0, 0)</div>
+                            <div style="background-color: rgb(0, 0, 255)">rgb(0, 0, 255)</div>
+                            <div style="background-color: rgb(60, 179, 113)">rgb(60, 179, 113)</div>
+                            <div style="background-color: rgb(238, 130, 238)">rgb(238, 130, 238)</div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <hr>
+
+        <!--SECTION 4 - BACKGROUNDS-->
+            <section class="main-section" id="Backgrounds">
+                <header class="section-title">Backgrounds</header>
+                <article class="section-content">
+                    <div class="background-box">
+                        <p>The CSS background properties are used to define the background effects for elements.</p>
+                        <p>CSS background properties:</p>
+                        <ul>
+                            <li>background-color</li>
+                            <li>background-image</li>
+                            <li>background-repeat</li>
+                            <li>background-attachment</li>
+                            <li>background-position</li>
+                        </ul>
+                    </div>
+                    <h3 class="sub-section-title">Background Color</h3>
+                    <p>The <span style="background-color:lightblue; color: blue;">background-color</span> property specifies the background color of an element.</p>
+                    <p>The background color of a page is set like this:</p>
+                    <div class="example">
+                        <p>
+                            <span> body { </span> <br>
+                            <span style="color:blue"> background-color : lightblue; </span> <br>
+                            <span> } </span>        
+                        </p>
+                    </div>
+                    <h3 class="sub-section-title">Background Image</h3>
+                    <p>The <span style="background-color:lightblue; color: blue;">background-image</span> property specifies an image to use as the background of an element.</p>
+                    <p>By default, the image is repeated so it covers the entire element.</p>
+                    <p>The background image for a page can be set like this:</p>
+                    <div class="example">
+                        <p>
+                            <span> body { </span> <br>
+                            <span style="color:blue"> background-image : url ("paper.gif"); </span> <br>
+                            <span> } </span>        
+                        </p>
+                    </div>
+                    <h3 class="sub-section-title">Background - Shorthand property</h3>
+                    <p>To shorten the code, it is also possible to specify all the background properties in one single property.</p>
+                    <p>This is called a shorthand property.</p>
+                    <p>The shorthand property for background is <span style="background-color:lightblue; color: blue;">background </span>:</p>
+                    <div class="example">
+                        <p>
+                            <span> body { </span> <br>
+                            <span style="color:blue"> background: #ffffff url ("img_tree.png") no-repeat right top; </span> <br>
+                            <span> } </span>        
+                        </p>
+                    </div>
+                    <p>When using the shorthand property the order of the property values is:</p>
+                    <ul>
+                        <li class="list"><span style="background-color:lightblue; color: blue;">background-color</span></li>
+                        <li class="list"><span style="background-color:lightblue; color: blue;">background-image</span></li>
+                        <li class="list"><span style="background-color:lightblue; color: blue;">background-repeat</span></li>
+                        <li class="list"><span style="background-color:lightblue; color: blue;">background-attachment</span></li>
+                        <li class="list"><span style="background-color:lightblue; color: blue;">background-position</span></li>
+                    </ul>
+                    <p>It does not matter if one of the property values is missing, as long as the other ones are in this order.</p>
+                </article>
+            </section>
+            <hr>
+
+        <!--SECTION 5 - TEXT-->
+            <section class="main-section" id="Text">
+                <header class="section-title" >Text</header>
+                <article class="section-content">
+                    <div class="text-box">
+                        <h1>TEXT FORMATTING</h1>
+                        <p>This text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and color properties. 
+                            The paragraph is indented, aligned, and the space between characters is specified. The underline is removed from this colored "Try it Yourself" link.</p>
+                    </div>
+                    <h3 class="sub-section-title">Text Color</h3>
+                    <p>The <span class="span-block">color</span>property is used to set the color of the text. The color is specified by:</p>
+                    <ul>
+                        <li>a color name - like "red"</li>
+                        <li>a HEX value - like "#ff0000"</li>
+                        <li>an RGB value - like "rgb(255,0,0)"</li>
+                    </ul>
+                    <p>The default text color for a page is defined in the body selector.</p>
+                    <div class="example">
+                        <h4>Example</h4>
+                        <p>
+                            <span> body { </span> <br>
+                            <span style="color:blue"> color : blue; </span> <br>
+                            <span> } </span>        
+                        </p>
+                        <p>
+                            <span> h1 { </span> <br>
+                            <span style="color:blue"> color : green; </span> <br>
+                            <span> } </span>        
+                        </p>
+                    </div>
+                    <h3 class="sub-section-title">Text Alignment</h3>
+                    <p>The <span class="span-block">text-align</span>property is used to set the horizontal alignment of a text.</p>
+                    <p>A text can be left or right aligned, centered, or justified.</p>
+                    <div class="example">
+                        <h4>Example</h4>
+                        <p>
+                            <span> h1 { </span> <br>
+                            <span style="color:blue"> text-align : center; </span> <br>
+                            <span> } </span>        
+                        </p>
+                        <p>
+                            <span> h2 { </span> <br>
+                            <span style="color:blue"> text-align : left; </span> <br>
+                            <span> } </span>        
+                        </p>
+                        <p>
+                            <span> h3 { </span> <br>
+                            <span style="color:blue"> text-align : right; </span> <br>
+                            <span> } </span>        
+                        </p>
+                    </div>
+                    <h3 class="sub-section-title">Text Decoration</h3>
+                    <p>The <span class="span-block">text-decoration</span>property is used to set or remove decorations from text.</p>
+                    <p>The value <span class="span-block">text-decoration: none;</span>is often used to remove underlines from links:
+                    <div class="example">
+                        <h4>Example</h4>
+                        <p>
+                            <span> a { </span> <br>
+                            <span style="color:blue"> text-decoration : none; </span> <br>
+                            <span> } </span>        
+                        </p>
+                    </div>
+                    <p>The other <span class="span-block">text-decoration</span>values are used to decorate text:</p>
+                    <ul>
+                        <li><span style="text-decoration:overline">Overline<br></span><span class="span-block">text-decoration : overline;</span></li>
+                        <li><span style="text-decoration:line-through">Line through<br></span><span class="span-block">text-decoration : line-through;</span></li>
+                        <li><span style="text-decoration:underline">Underline<br></span><span class="span-block">text-decoration : underline;</span></li>
+                    </ul>
+                </article>
+            </section>
+            <hr>
+         
+        </main>
+    </div>
+</body>
+  
+
+</html>
